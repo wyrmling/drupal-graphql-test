@@ -1,0 +1,19 @@
+/vendor
+/web/core
+
+
+/web/sites/*/settings*.php
+/web/sites/*/services*.yml
+/web/sites/*/files
+/web/sites/*/private
+/web/sites/simpletest
+
+# Directories specific to this template
+# /web/libraries
+# /web/modules/contrib
+# /web/profiles/contrib
+# /web/themes/contrib
+
+
+# Прочее
+.env
