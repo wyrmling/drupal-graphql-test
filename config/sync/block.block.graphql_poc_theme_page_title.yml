@@ -1,0 +1,20 @@
+uuid: e3541d4c-d245-490a-9386-1eba2e468c51
+langcode: en
+status: true
+dependencies:
+  theme:
+    - graphql_poc_theme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: graphql_poc_theme_page_title
+theme: graphql_poc_theme
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

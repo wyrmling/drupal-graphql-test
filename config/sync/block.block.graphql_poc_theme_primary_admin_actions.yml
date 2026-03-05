@@ -1,0 +1,20 @@
+uuid: 7e81e15d-d881-4647-9ffa-12bb4d5438a0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - graphql_poc_theme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: graphql_poc_theme_primary_admin_actions
+theme: graphql_poc_theme
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

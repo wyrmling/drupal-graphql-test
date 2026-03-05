@@ -1,0 +1,23 @@
+uuid: 50995354-889e-4fc4-a242-a2bdf93453c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - graphql_poc_theme
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: graphql_poc_theme_syndicate
+theme: graphql_poc_theme
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

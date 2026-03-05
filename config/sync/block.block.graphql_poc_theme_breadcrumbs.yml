@@ -1,0 +1,22 @@
+uuid: 3324bc99-a652-4160-83a4-b1756f55881b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - graphql_poc_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: graphql_poc_theme_breadcrumbs
+theme: graphql_poc_theme
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

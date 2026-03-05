@@ -1,0 +1,22 @@
+uuid: 1fa371ae-910d-4881-9208-d288660ab6d7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - graphql_poc_theme
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: graphql_poc_theme_secondary_local_tasks
+theme: graphql_poc_theme
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

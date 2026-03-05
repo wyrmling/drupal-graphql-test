@@ -1,0 +1,22 @@
+uuid: 9083c693-4c06-4a0f-99d4-22b1a725c19b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - graphql_poc_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: graphql_poc_theme_content
+theme: graphql_poc_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
