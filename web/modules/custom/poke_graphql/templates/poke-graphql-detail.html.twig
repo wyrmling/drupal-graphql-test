@@ -1,0 +1,71 @@
+{# {{ attach_library('poke_theme/global') }} #}
+<main class="poke-page">
+  <a class="poke-back-link" href="{{ path('poke_graphql.list') }}">← Back to list</a>
+
+  {% if error %}
+    <div class="poke-alert poke-alert--error" role="alert">
+      <strong>Error:</strong> {{ error }}
+    </div>
+  {% elseif pokemon is empty %}
+    <div class="poke-alert poke-alert--empty" role="status">
+      Pokemon not found.
+    </div>
+  {% else %}
+    {%
+      set sprites_raw = pokemon.pokemon_v2_pokemonsprites[0].sprites ?? '{}'
+    %}
+    {%
+      set sprite_url = sprites_raw['front_default'] ?? null
+    %}
+
+    <div class="poke-detail">
+      <div class="poke-detail__hero">
+        {% if sprite_url %}
+          <img class="poke-detail__sprite" src="{{ sprite_url }}" alt="{{ pokemon.name | capitalize }} sprite" loading="lazy">
+        {% endif %}
+        <div class="poke-detail__header">
+          <span class="poke-card__id">#{{ pokemon.id }}</span>
+          <h1 class="poke-detail__name">{{ pokemon.name | capitalize }}</h1>
+          <div class="poke-detail__types">
+            {% for t in pokemon.pokemon_v2_pokemontypes %}
+              <span class="poke-badge poke-badge--{{ t.pokemon_v2_type.name }}">{{ t.pokemon_v2_type.name }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <section class="poke-detail__section">
+        <h2>Base Info</h2>
+        <dl class="poke-dl">
+          <dt>Height</dt>     <dd>{{ pokemon.height }}</dd>
+          <dt>Weight</dt>     <dd>{{ pokemon.weight }}</dd>
+          <dt>Base XP</dt>    <dd>{{ pokemon.base_experience }}</dd>
+        </dl>
+      </section>
+
+      <section class="poke-detail__section">
+        <h2>Abilities</h2>
+        <ul class="poke-tag-list">
+          {% for a in pokemon.pokemon_v2_pokemonabilities %}
+            <li>{{ a.pokemon_v2_ability.name }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="poke-detail__section">
+        <h2>Base Stats</h2>
+        <ul class="poke-stats">
+          {% for s in pokemon.pokemon_v2_pokemonstats %}
+            <li class="poke-stat">
+              <span class="poke-stat__name">{{ s.pokemon_v2_stat.name }}</span>
+              <div class="poke-stat__bar-wrap">
+                <div class="poke-stat__bar" style="--val: {{ s.base_stat }}"></div>
+              </div>
+              <span class="poke-stat__val">{{ s.base_stat }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  {% endif %}
+</main>

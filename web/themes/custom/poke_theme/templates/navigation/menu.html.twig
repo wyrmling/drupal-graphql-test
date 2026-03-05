@@ -6,13 +6,13 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('sw-menu') }}>
+      <ul{{ attributes.addClass('poke-menu') }}>
     {% else %}
-      <ul class="sw-menu sw-menu--sub">
+      <ul class="poke-menu poke-menu--sub">
     {% endif %}
     {% for item in items %}
-      <li{{ item.attributes.addClass('sw-menu__item') }}>
-        {{ link(item.title, item.url, { 'class': ['sw-menu__link'] }) }}
+      <li{{ item.attributes.addClass('poke-menu__item') }}>
+        {{ link(item.title, item.url, { 'class': ['poke-menu__link'] }) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}

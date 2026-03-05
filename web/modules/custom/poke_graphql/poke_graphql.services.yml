@@ -1,0 +1,4 @@
+services:
+  poke_graphql.poke_client:
+    class: Drupal\poke_graphql\Service\PokeGraphQLClient
+    arguments: ['@http_client']

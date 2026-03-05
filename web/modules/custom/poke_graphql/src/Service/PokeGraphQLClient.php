@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\sw_graphql\Service;
+namespace Drupal\poke_graphql\Service;
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;

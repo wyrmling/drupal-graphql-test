@@ -1,0 +1,23 @@
+{% if page.header %}
+  <header class="poke-header" role="banner">
+    <div class="poke-header__inner">
+      {{ page.header }}
+      <nav class="poke-header__nav">
+        {{ page.header_left }}
+      </nav>
+      <nav class="poke-header__account">
+        {{ page.header_right }}
+      </nav>
+    </div>
+  </header>
+{% endif %}
+
+<main id="main-content" class="poke-shell__main" tabindex="-1">
+  {{ page.content }}
+</main>
+
+{% if page.footer %}
+  <footer class="poke-footer" role="contentinfo">
+    {{ page.footer }}
+  </footer>
+{% endif %}

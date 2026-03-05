@@ -2,17 +2,15 @@
 
 /**
  * @file
- * Hook implementations for sw_graphql module.
+ * Hook implementations for poke_graphql module.
  */
-
-use Drupal\Core\Url;
 
 /**
  * Implements hook_theme().
  */
-function sw_graphql_theme(): array {
+function poke_graphql_theme(): array {
   return [
-    'sw_graphql_list' => [
+    'poke_graphql_list' => [
       'variables' => [
         'items'       => [],
         'error'       => NULL,
@@ -20,7 +18,7 @@ function sw_graphql_theme(): array {
         'total_pages' => 1,
       ],
     ],
-    'sw_graphql_detail' => [
+    'poke_graphql_detail' => [
       'variables' => [
         'pokemon' => [],
         'error'   => NULL,

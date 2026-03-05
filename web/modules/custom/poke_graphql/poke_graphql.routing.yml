@@ -1,0 +1,15 @@
+poke_graphql.list:
+  path: '/items'
+  defaults:
+    _controller: '\Drupal\poke_graphql\Controller\PokemonListController::list'
+    _title: 'Pokemon List'
+  requirements:
+    _access: 'TRUE'
+
+poke_graphql.detail:
+  path: '/items/{id}'
+  defaults:
+    _controller: '\Drupal\poke_graphql\Controller\PokemonDetailController::detail'
+    _title: 'Pokemon Detail'
+  requirements:
+    _access: 'TRUE'
