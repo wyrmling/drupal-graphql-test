@@ -1,0 +1,7 @@
+name: 'Star Wars theme'
+type: theme
+description: 'Minimal theme for Star Wars GraphQL test.'
+core_version_requirement: ^10 || ^11
+base theme: stable9
+libraries:
+  - sw_theme/global
