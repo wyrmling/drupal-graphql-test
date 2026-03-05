@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations for sw_graphql module.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_theme().
+ */
+function sw_graphql_theme(): array {
+  return [
+    'sw_graphql_list' => [
+      'variables' => [
+        'items'       => [],
+        'error'       => NULL,
+        'page'        => 0,
+        'total_pages' => 1,
+      ],
+    ],
+    'sw_graphql_detail' => [
+      'variables' => [
+        'pokemon' => [],
+        'error'   => NULL,
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,5 @@
+name: 'SW GraphQL test'
+type: module
+description: 'SW/Pokemon listing and detail pages via GraphQL (PokeAPI/SWAPI).'
+core_version_requirement: ^10 || ^11
+package: Custom
