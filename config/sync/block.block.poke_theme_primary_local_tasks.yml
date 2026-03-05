@@ -1,15 +1,15 @@
-uuid: 7dbb79a9-27f9-46c6-880b-80261c5a6530
+uuid: e2b6cdb3-9d7a-454f-ac9f-b91e25f3f299
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
-    - graphql_poc_theme
+    - poke_theme
 _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
-id: graphql_poc_theme_primary_local_tasks
-theme: graphql_poc_theme
+id: poke_theme_primary_local_tasks
+theme: poke_theme
 region: header
-weight: -4
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:

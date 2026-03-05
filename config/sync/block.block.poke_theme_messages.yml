@@ -1,17 +1,17 @@
-uuid: 9e2b65e1-04bb-48ac-a289-abf77cba0f21
+uuid: b4979a10-7d89-4be1-963d-f9670cc3ad4b
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
-    - graphql_poc_theme
+    - poke_theme
 _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
-id: graphql_poc_theme_messages
-theme: graphql_poc_theme
+id: poke_theme_messages
+theme: poke_theme
 region: header
-weight: -5
+weight: -1
 provider: null
 plugin: system_messages_block
 settings:

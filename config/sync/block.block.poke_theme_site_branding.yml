@@ -1,17 +1,17 @@
-uuid: 4b52ca12-3f87-4e9b-b465-3a64675070da
+uuid: 5c06c35a-6a9a-46bc-9195-c756e7b53f77
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - graphql_poc_theme
+    - poke_theme
 _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
-id: graphql_poc_theme_site_branding
-theme: graphql_poc_theme
+id: poke_theme_site_branding
+theme: poke_theme
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

@@ -1,4 +1,4 @@
-uuid: 708fd51a-f70c-42c9-ab72-ab03b4ccd393
+uuid: 1920393f-ef2a-4cc9-8c64-6dcab4902791
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - graphql_poc_theme
+    - poke_theme
 _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: graphql_poc_theme_main_menu
-theme: graphql_poc_theme
-region: header
-weight: 0
+id: poke_theme_main_menu
+theme: poke_theme
+region: header_left
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

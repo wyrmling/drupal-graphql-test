@@ -1,17 +1,17 @@
-uuid: 3324bc99-a652-4160-83a4-b1756f55881b
+uuid: 370c1c5c-3f54-43f8-b12b-d77516052db4
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
-    - graphql_poc_theme
+    - poke_theme
 _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: graphql_poc_theme_breadcrumbs
-theme: graphql_poc_theme
+id: poke_theme_breadcrumbs
+theme: poke_theme
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

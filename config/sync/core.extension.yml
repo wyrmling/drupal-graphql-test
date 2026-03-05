@@ -14,7 +14,6 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
-  drupal_graphql_proxy: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -34,6 +33,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  poke_graphql: 0
   search: 0
   shortcut: 0
   system: 0
@@ -50,5 +50,5 @@ theme:
   olivero: 0
   claro: 0
   stable9: 0
-  graphql_poc_theme: 0
+  poke_theme: 0
 profile: standard
