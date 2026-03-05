@@ -16,7 +16,7 @@ class PokemonListController extends ControllerBase {
   }
 
   public function list(Request $request): array {
-    $page= max(0, (int) $request->query->get('page', 0));
+    $page = max(0, (int) $request->query->get('page', 0));
     $limit = 20;
     $offset = $page * $limit;
     $error = NULL;

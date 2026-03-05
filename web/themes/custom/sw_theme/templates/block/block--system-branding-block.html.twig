@@ -1,0 +1,17 @@
+{% set site_name = site_name ?? '' %}
+{% set logo = site_logo ?? logo ?? '' %}
+
+<div{{ attributes.addClass('site-branding') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  {% if logo %}
+    <a class="site-branding__logo" href="{{ path('<front>') }}" rel="home">
+      <img src="{{ logo }}" alt="{{ 'Home'|t }}">
+    </a>
+  {% endif %}
+
+  {% if site_name %}
+    <a class="site-branding__name" href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
+  {% endif %}
+</div>

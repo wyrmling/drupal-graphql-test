@@ -1,0 +1,5 @@
+sw_graphql.list:
+  title: 'Pokemon List'
+  route_name: sw_graphql.list
+  menu_name: main          # или 'footer', 'admin', 'account' и т.д.
+  weight: 10

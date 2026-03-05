@@ -1,14 +1,20 @@
 {% if page.header %}
   <header class="sw-header" role="banner">
-    {{ page.header }}
+    <div class="sw-header__inner">
+      {{ page.header }}
+      <nav class="sw-header__nav">
+        {{ page.header_left }}
+      </nav>
+      <nav class="sw-header__account">
+        {{ page.header_right }}
+      </nav>
+    </div>
   </header>
 {% endif %}
 
 <main id="main-content" class="sw-shell__main" tabindex="-1">
   {{ page.content }}
 </main>
-
-
 
 {% if page.footer %}
   <footer class="sw-footer" role="contentinfo">

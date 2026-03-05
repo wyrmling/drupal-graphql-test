@@ -10,10 +10,11 @@
 
 # Directories specific to this template
 # /web/libraries
-# /web/modules/contrib
+/web/modules/contrib
 # /web/profiles/contrib
 # /web/themes/contrib
 
 
-# Прочее
+# Other
 .env
+/.idea
